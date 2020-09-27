@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WAW</string>
+    <string name="store_btn_text"># 여기 가봐</string>
+    <string name="challenge_btn_text"># 이거 해봐</string>
+    <string name="question_btn_text"># 질문 해봐</string>
+    <string name="main_text">메뉴바를\n클릭하세요</string>
+    <string name="profile_name">구글 이름</string>
+</resources>

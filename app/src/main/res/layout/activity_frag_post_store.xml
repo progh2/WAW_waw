@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragPostStore">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:padding="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/board_card"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="대구 의료진 분들! 응원합니다."/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="요즘 정말 다들 힘든시기 인것 같아요 ㅠㅠ 저는 그 중에서도 대구 의료진 분들의 사진을 보며 더 위로를 받기도 하고 빨리 코로나가 잠잠해졌으면 하는 바램입니다.당신이 우리의 영웅입니다 !"
+                    android:maxLines="6"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="10dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="#대구 #코로나 #의료진 #영웅"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_heart"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_baseline_favorite_60"/>
+
+                    <ImageView
+                        android:id="@+id/iv_comment"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@+id/iv_heart"
+                        android:src="@drawable/ic_baseline_chat_60"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_post_store"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_baseline_add_60"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

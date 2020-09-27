@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_post_store"
+        android:enabled="true"
+        android:icon="@drawable/icon_store"
+        android:title="@null"
+        />
+
+    <item
+        android:id="@+id/action_post_chall"
+        android:enabled="true"
+        android:icon="@drawable/icon_chall"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/action_chat_ask"
+        android:enabled="true"
+        android:icon="@drawable/icon_ask"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/icon_setting"
+        android:title=""
+        />
+</menu>
